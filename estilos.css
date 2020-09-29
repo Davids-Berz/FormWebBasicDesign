@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f2f2f2;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+
+.contenedor{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.formulario .contenedor-inputs{
+	padding: 20px;
+	background: #fff;
+	border-radius: 6px 6px 0 0;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"]{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px 10px;
+	font-size: 17px;
+	border: none;
+	border-bottom: 3px solid #ccc;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus{
+	border-bottom: 3px solid #7600C7;
+	outline: none;
+}
+
+.formulario input[type="radio"]{
+	display: none;
+	transition: background .3s ease-in-out;
+}
+
+.formulario .sexo{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.formulario .sexo .label-radio{
+	background: rgba(118,0,199,.5);
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	width: 49%;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background .3s ease-in-out;
+	font-weight: 600;
+}
+
+.formulario .sexo .label-radio:hover{
+	background: rgba(118,0,199,1);
+}
+
+.formulario input[type="radio"]:checked + .label-radio{
+	background: rgba(118,0,199,1);
+}
+
+.formulario .terminos{
+	text-align: center;
+	color: #5E5E5E;
+}
+
+.formulario .terminos label{
+	font-size: 16px;
+	margin-left: 2px;
+}
+
+.formulario .error{
+	display: none;
+	background: rgba(118,0,199,.8);
+	list-style: none;
+	border-radius: 2px;
+	padding: 10px;
+	font-size: 16px;
+	color: #fff;
+	margin: 20px 0;
+	text-align: justify;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.formulario .error ul li{
+	margin-bottom: 10px;
+}
+
+.formulario .error ul li:last-of-type{
+	margin-bottom: 0;
+}
+
+.btn{
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 12px 0;
+	border:none;
+	border-radius: 0 0 6px 6px;
+	outline: none;
+	background: rgba(118,0,199,.9);
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background .3s ease-in-out;
+}
+
+.btn:hover{
+	background: rgba(118,0,199,1);
+}
+
