@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FORMULARIOS</title>
-	<link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-	<div class="contenedor">
-		<form action="#" id="formulario" class="formulario" name="formulario">
-			<div class="contenedor-inputs">
-				<input type="text" name="nombre" placeholder="Nombre">
-				<input type="email" name="email" id="email" placeholder="Correo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIOS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="#" id="formulario" class="formulario" name="formulario">
+        <div class="contenedor-inputs">
+		  <div class="alert " id="errNombre" role="alert">
+			
+		  </div>
+          <input type="text" name="nombre" placeholder="Nombre" />
 
-				<div class="sexo">
-					<input type="radio" name="sexo" id="hombre" value="hombre"><label class="label-radio hombre" for="hombre">Hombre</label>
-					<input type="radio" name="sexo" id="mujer" value="mujer"><label class="label-radio mujer" for="mujer">Mujer</label>
-				</div>
+          <input type="email" name="email" id="email" placeholder="Correo" />
 
-				<div class="terminos">
-					<input type="checkbox" name="terminos" id="terminos">
-					<label for="terminos">Acepto Terminos & Condiciones</label>
-				</div>
+          <div class="sexo">
+            <input type="radio" name="sexo" id="hombre" value="hombre" /><label
+              class="label-radio hombre"
+              for="hombre"
+              >Hombre</label
+            >
+            <input type="radio" name="sexo" id="mujer" value="mujer" /><label
+              class="label-radio mujer"
+              for="mujer"
+              >Mujer</label
+            >
+          </div>
 
-				<ul class="error" id="error">
-				</ul>
-			</div>
-			<input type="submit" class="btn class=" value="Registrate">
-		</form>
-	</div>
-	<script src="script.js"></script>
-</body>
+          <div class="terminos">
+            <input type="checkbox" name="terminos" id="terminos" />
+            <label for="terminos">Acepto Terminos & Condiciones</label>
+          </div>
+
+          <ul class="error" id="error"></ul>
+        </div>
+        <input type="submit" class="btn class=" value="Registrate" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
